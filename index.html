@@ -12,8 +12,10 @@
 
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-  <script src="js/bootstrap.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/bower_components/readmore/readmore.min.js"></script>
 
 </head>
 
@@ -21,18 +23,54 @@
 	<header class="site-header text-center">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="col-md-12">
 					<h1><a href="/">Russ Masterson</a></h1>
 				</div>
 			</div>
 		  <div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="col-md-12">
 					<p>Author • Marietta, GA</p>
 				</div>
 			</div>
 		</div>
 	</header>
+
+	<section class="bookshelf">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-md-offset-2">
+					<img src="/img/book-adao.png" class="img-responsive">
+					<article>
+						<h2>Adao’s Dance: a search for meaning and peace</h2>
+						<h3>Fiction / Short Novel • November 2015</h3>
+						<p>Told with profound reflection and lyrical beauty, Adao’s Dance captivates and inspires. This story, powerful in its narrative and insight, is about a prairie boy, Adao, who receives a dream with a holy man, hears a voice in the wind, and leaves his home to summit a mountain and receive renown.</p>
+						<p>Adao passes into an unknown, dangerous, and supernatural world discovering both friends and enemies, acclaim and despair, while gaining wisdom about the heart and the desires within it. Adao's Dance probes the complexities of human achievement, acceptance, and love, while exploring the question, Where might one find true inner peace?</p>
+					</article>
+					<p>Buy it on: <a href="#">Amazon</a> • <a href="#">iBooks</a>
+				</div>
+				<div class="col-md-4">
+					<img src="/img/book-40days.png" class="img-responsive">
+					<article>
+						<h2>40 Days Without Food: divine goodness to a starving soul</h2>
+						<h3>Nonfiction / Memoir  • 2010</h3>
+						<p>"I had a college degree, and soon a seminary degree to accompany it, yet I didn't know where to go or what to do." As he puts it, "I kept hoping a step would arrive when it was time to lift my foot."</p>
+						<p>Disillusioned with his life, as well as with God, he heard this advice: fast from food for 40 days. Faithless and frazzled, Russ accepted the challenge, hoping for direction, reflecting on the past, and wrestling with issues like purpose, faith, and love.</p>
+						<p>In this book, readers will find a fresh literary voice--an insightful thinker who meets people in their humanity while helping them to see they can be rescued from it. The journey of these forty days without food will help you explore what really matters in life</p>
+					</article>
+					<p>Buy it on: <a href="#">Amazon</a> • <a href="#">iBooks</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
 </body>
 
+ 	<script>
+ 	$('article').readmore({
+  speed: 75,
+  collapsedHeight:216,
+  lessLink: '<a href="#">Read less</a>'
+})
+ 	</script>
 
 </html>

@@ -13,4 +13,26 @@ h1 {
 .site-header {
   margin-top: 42px; }
   .site-header p {
-    color: #999; }
+    color: #666; }
+
+.bookshelf {
+  margin-top: 42px; }
+  .bookshelf .book {
+    width: 316px;
+    height: auto; }
+  .bookshelf h2 {
+    margin-top: 26px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.4em; }
+  .bookshelf h3 {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #999;
+    margin-top: 0px; }
+  .bookshelf p {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 1.65em;
+    color: #666;
+    font-weight: 300; }
