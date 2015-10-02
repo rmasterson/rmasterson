@@ -20,6 +20,8 @@ h1 {
   .bookshelf .book {
     width: 316px;
     height: auto; }
+  .bookshelf a > img:hover {
+    opacity: 0.8; }
   .bookshelf h2 {
     margin-top: 26px;
     font-size: 16px;
