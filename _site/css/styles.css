@@ -11,17 +11,25 @@ h1 {
     color: #222; }
 
 .site-header {
-  margin-top: 42px; }
+  margin-top: 40px; }
+  .site-header .sig {
+    background-image: url(/img/sig-long.gif);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    display: block;
+    height: 48px;
+    background-position: 50% 0px; }
   .site-header p {
     color: #666; }
 
 .bookshelf {
   margin-top: 42px; }
   .bookshelf .book {
-    width: 316px;
+    /*		width:316px;
+    */
     height: auto; }
   .bookshelf a > img:hover {
-    opacity: 0.8; }
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15); }
   .bookshelf h2 {
     margin-top: 26px;
     font-size: 16px;
