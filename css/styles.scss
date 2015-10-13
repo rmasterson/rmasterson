@@ -6,7 +6,54 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   color:#222;
-  background:#f9f9f9;
+  background:#fff;
+}
+
+.left-pane {
+	width:336px;
+	height:100%;
+	background:#f9f9f9;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	padding-top: 48px;
+
+	.sig {
+		background-image: url(/img/sig-with-bg.png);
+		background-repeat: no-repeat;
+		background-size: 200px;
+		display: block;
+		height: 70px;
+		width: 200px;
+		background-position: 0px 50%;
+		margin-top: 12px;	
+	}
+
+	p {
+		margin: 0 0 10px;
+		font-size: 14px;
+		text-align: justify;
+		line-height: 1.6em;
+		font-weight: 200;
+		margin: 10px 0px 30px 0px;
+	}
+	.updates-btn {
+		background-color:#67AFD0;
+		border-radius: 20px;
+		padding:9px 20px;
+		color: #fff !important;
+		margin-top: 15px !important;
+		display: block;
+		text-align: center;
+		text-transform: uppercase;
+		text-transform: uppercase;
+		font-size: 12px;
+		letter-spacing: 0.04em;
+
+		&:hover {
+			background-color: #5794B0 !important;
+		}
+	}
 }
 
 h1 {
@@ -19,51 +66,16 @@ h1 {
 	}
 }
 
-.navbar-default {
-	background:#fff;
-	border-bottom:1px solid #EBEBEB;
-
-	.navbar-nav>li>a {
-	    margin-top: 10px;
-	    text-transform: uppercase;
-	    font-size:12px;
-	    letter-spacing: 0.03em;
-	}
-
-	.sig {
-		background-image: url(/img/sig-long.gif);
-		background-repeat: no-repeat;
-		background-size: 200px;
-		display: block;
-		height: 70px;
-		width: 200px;
-		background-position: 0px 50%;	
-	}
-	.updates-btn {
-		background-color:#67AFD0;
-		border-radius: 20px;
-		padding:9px 20px;
-		color: #fff !important;
-		margin-top: 15px !important;
-
-		&:hover {
-			background-color: #5794B0 !important;
-		}
-	}
-}
-
-.site-header {
-	margin-top:40px;
-
-
-
-	p {
-		color:#666;
-	}
-}
 
 .bookshelf {
-	margin-top:118px;
+	position: absolute;
+	left:360px;
+	max-width: 960px;
+	min-width: 320px;
+
+	.row {
+		margin: 48px 0px;
+	}
 
 	.book {
 	   height:auto;
@@ -75,10 +87,9 @@ h1 {
 */	}
 
 	h2 {
-		margin-top:26px;
-		font-size: 16px;
-		font-weight: 500;
+		font-size: 24px;
 		line-height: 1.4em;
+		margin-top: 0px;
 	}
 
 	h3 {
