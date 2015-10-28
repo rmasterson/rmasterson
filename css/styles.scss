@@ -2,11 +2,21 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
+$res_xs: 480px;
+$res_sm: 768px;
+$res_md: 992px;
+$res_lg: 1200px;
+
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   color:#222;
   background:#fff;
+
+  @media (max-width: $res_xs) {
+    background:red;
+  }
 }
 
 .left-pane {
@@ -17,6 +27,10 @@ body {
 	top: 0;
 	bottom: 0;
 	padding-top: 48px;
+
+	@media (max-width: $res_md-2) {
+	  width:288px;
+	}
 
 	.sig {
 		background-image: url(/img/sig-with-bg.png);
@@ -72,6 +86,14 @@ h1 {
 	left:360px;
 	max-width: 960px;
 	min-width: 320px;
+
+	@media (max-width: $res_md+32) {
+	  left:340px;
+	}
+
+	@media (max-width: $res_md) {
+	  left:290px;
+	}
 
 	.row {
 		margin: 48px 0px;
