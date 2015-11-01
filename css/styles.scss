@@ -12,28 +12,29 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   color:#222;
-  background:#fff;
+  background:#f9f9f9;
 
   @media (max-width: $res_xs) {
     background:red;
   }
+
+  .container {
+  	margin-top:56px;
+  }
 }
 
-.left-pane {
-	width:336px;
-	height:100%;
-	background:#f9f9f9;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	padding-top: 48px;
+.left {
 
-	@media (max-width: $res_md) {
-	  width:288px;
+	.card {
+		background:#fff;
+		border-radius:7px;
+		max-width: 270px;
+		padding:30px;
+		box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15);
 	}
 
 	.sig {
-		background-image: url(/img/sig-with-bg.png);
+		background-image: url(/img/russ-sig.png);
 		background-repeat: no-repeat;
 		background-size: 200px;
 		display: block;
@@ -82,26 +83,14 @@ h1 {
 
 
 .bookshelf {
-	position: absolute;
-	left:360px;
-	max-width: 960px;
-	min-width: 320px;
-
-	@media (max-width: $res_md+32) {
-	  left:340px;
-	}
-
-	@media (max-width: $res_md) {
-	  left:290px;
-	}
 
 	.row {
-		margin: 48px 0px;
+		margin-bottom:48px;
 	}
 
 	.book {
-	   height:auto;
-		 box-shadow:5px 5px 0px rgba(0,0,0,0.07);
+	  height:auto;
+		box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
 	}
 
 	a > img:hover {
