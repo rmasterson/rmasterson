@@ -2,52 +2,49 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #fff; }
+  background: #f9f9f9; }
   @media (max-width: 480px) {
     body {
       background: red; } }
+  body .container {
+    margin-top: 56px; }
 
-.left-pane {
-  width: 336px;
-  height: 100%;
-  background: #f9f9f9;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  padding-top: 48px; }
-  @media (max-width: 992px) {
-    .left-pane {
-      width: 288px; } }
-  .left-pane .sig {
-    background-image: url(/img/sig-with-bg.png);
-    background-repeat: no-repeat;
-    background-size: 200px;
-    display: block;
-    height: 70px;
-    width: 200px;
-    background-position: 0px 50%;
-    margin-top: 12px; }
-  .left-pane p {
-    margin: 0 0 10px;
-    font-size: 14px;
-    text-align: justify;
-    line-height: 1.6em;
-    font-weight: 200;
-    margin: 10px 0px 30px 0px; }
-  .left-pane .updates-btn {
-    background-color: #67AFD0;
-    border-radius: 20px;
-    padding: 9px 20px;
-    color: #fff !important;
-    margin-top: 15px !important;
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-    text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 0.04em; }
-    .left-pane .updates-btn:hover {
-      background-color: #5794B0 !important; }
+.left .card {
+  background: #fff;
+  border-radius: 7px;
+  max-width: 270px;
+  padding: 30px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15); }
+.left .sig {
+  background-image: url(/img/russ-sig.png);
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: block;
+  height: 70px;
+  width: 200px;
+  background-position: 0px 50%;
+  margin-top: 12px; }
+.left p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 1.6em;
+  font-weight: 200;
+  margin: 10px 0px 30px 0px; }
+.left .updates-btn {
+  background-color: #67AFD0;
+  border-radius: 20px;
+  padding: 9px 20px;
+  color: #fff !important;
+  margin-top: 15px !important;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.04em; }
+  .left .updates-btn:hover {
+    background-color: #5794B0 !important; }
 
 h1 {
   text-transform: uppercase;
@@ -56,38 +53,27 @@ h1 {
   h1 a {
     color: #222; }
 
-.bookshelf {
-  position: absolute;
-  left: 360px;
-  max-width: 960px;
-  min-width: 320px; }
-  @media (max-width: 1024px) {
-    .bookshelf {
-      left: 340px; } }
-  @media (max-width: 992px) {
-    .bookshelf {
-      left: 290px; } }
-  .bookshelf .row {
-    margin: 48px 0px; }
-  .bookshelf .book {
-    height: auto;
-    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.07); }
-  .bookshelf a > img:hover {
-    /*		box-shadow:0px 0px 30px rgba(0,0,0,0.15);
-    */ }
-  .bookshelf h2 {
-    font-size: 18px;
-    line-height: 1.4em;
-    margin-top: 0px;
-    font-weight: 400; }
-  .bookshelf h3 {
-    text-transform: uppercase;
-    font-size: 12px;
-    color: #999;
-    margin-top: 0px; }
-  .bookshelf p {
-    margin-top: 14px;
-    font-size: 15px;
-    line-height: 1.65em;
-    color: #666;
-    font-weight: 300; }
+.bookshelf .row {
+  margin-bottom: 48px; }
+.bookshelf .book {
+  height: auto;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15); }
+.bookshelf a > img:hover {
+  /*		box-shadow:0px 0px 30px rgba(0,0,0,0.15);
+  */ }
+.bookshelf h2 {
+  font-size: 18px;
+  line-height: 1.4em;
+  margin-top: 0px;
+  font-weight: 400; }
+.bookshelf h3 {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #999;
+  margin-top: 0px; }
+.bookshelf p {
+  margin-top: 14px;
+  font-size: 15px;
+  line-height: 1.65em;
+  color: #666;
+  font-weight: 300; }
