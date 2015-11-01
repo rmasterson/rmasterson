@@ -18,7 +18,7 @@ body {
   	margin-top:56px;
   }
 
-  @media (max-width: $res_sm) {
+  @media (max-width: $res_md) {
   	.container {
   		margin-top:20px;
   	}
@@ -31,9 +31,14 @@ body {
 		background:#fff;
 		border-radius:7px;
 		max-width: 270px;
-		padding:30px;
+		padding:28px;
 		box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15);
 		margin-bottom:30px;
+
+		@media (max-width: $res_lg) {
+			padding:28px;
+		}
+
 	}
 
 	.sig {
@@ -51,13 +56,6 @@ body {
 		  display: block;
 		  height: 70px;
 		  width: 160px;
-		}
-
-		@media (max-width: $res_md) {
-			background-size: 200px;
-			display: block;
-			height: 70px;
-			width: 200px;
 		}
 	}
 
@@ -102,12 +100,13 @@ h1 {
 .bookshelf {
 
 	.row {
-		margin-bottom:48px;
+		margin-bottom:10px;
 	}
 
 	.book {
 	  height:auto;
 		box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+		margin-bottom:20px;
 	}
 
 	a > img:hover {
