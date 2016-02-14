@@ -1,0 +1,10 @@
+# Site settings
+title: Russ Masterson | Author
+email: russmasterson@gmail.com
+description: Author • Marietta, GA • Russ Masterson lives outside of Atlanta with his wife and three little girls. Adao’s Dance is his first work of fiction. On Saturdays Russ and his four ladies are walking in the woods or diving into a lake.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://rmasterson.com"
+twitter_username: russmasterson
+
+# Build settings
+markdown: kramdown
