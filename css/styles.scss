@@ -12,35 +12,51 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   color:#222;
-  background:#fff;
+  background:#f9f9f9;
 
-  @media (max-width: $res_xs) {
-    background:red;
+  .container {
+  	margin-top:56px;
+  }
+
+  @media (max-width: $res_md) {
+  	.container {
+  		margin-top:20px;
+  	}
   }
 }
 
-.left-pane {
-	width:336px;
-	height:100%;
-	background:#f9f9f9;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	padding-top: 48px;
+.left {
 
-	@media (max-width: $res_md-2) {
-	  width:288px;
+	.card {
+		background:#fff;
+		border-radius:7px;
+		max-width: 270px;
+		padding:28px;
+		box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15);
+		margin-bottom:30px;
+
+		@media (max-width: $res_lg) {
+			padding:28px;
+		}
+
 	}
 
 	.sig {
-		background-image: url(/img/sig-with-bg.png);
+		background-image: url(/img/russ-sig.png);
 		background-repeat: no-repeat;
 		background-size: 200px;
 		display: block;
 		height: 70px;
 		width: 200px;
 		background-position: 0px 50%;
-		margin-top: 12px;	
+		margin-top: 12px;
+
+		@media (max-width: $res_lg) {
+		  background-size: 160px;
+		  display: block;
+		  height: 70px;
+		  width: 160px;
+		}
 	}
 
 	p {
@@ -82,26 +98,16 @@ h1 {
 
 
 .bookshelf {
-	position: absolute;
-	left:360px;
-	max-width: 960px;
-	min-width: 320px;
-
-	@media (max-width: $res_md+32) {
-	  left:340px;
-	}
-
-	@media (max-width: $res_md) {
-	  left:290px;
-	}
 
 	.row {
-		margin: 48px 0px;
+		margin-bottom:10px;
 	}
 
 	.book {
-	   height:auto;
-		 box-shadow:5px 5px 0px rgba(0,0,0,0.07);
+	  height:auto;
+		box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+		margin-bottom:20px;
+		border:14px solid #fff;
 	}
 
 	a > img:hover {
